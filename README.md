@@ -1,4 +1,4 @@
-# LujainAI
+ # LujainAI
 
 LujainAI, Flask, PyTorch, OpenCV ve Pandas gibi popüler kütüphane ve framework'leri kullanan Python tabanlı bir uygulamadır. Uygulama, veri işleme, model çıkarımı ve sonuç görüntüleme gibi özellikler sunar.
 
@@ -73,3 +73,8 @@ Tam bağımlılık listesi için requirements.txt dosyasına bakabilirsiniz.
 2. Sistem, OpenCV ve diğer araçları kullanarak girdiyi önişler.
 3. Yapay zeka modeli tahmin yapmak için çalışır.
 4. Sonuçlar, görsel olarak web arayüzünde görüntülenir.
+
+
+- not
+  ## share/man/man1
+- YANLIŞIKLA EKLADIM
