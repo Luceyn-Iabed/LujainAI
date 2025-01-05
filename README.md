@@ -1,14 +1,11 @@
- # LujainAI
+ # LujainAI: Göğüs Röntgeni Görüntü Analizi Uygulaması
 
-LujainAI, Flask, PyTorch, OpenCV ve Pandas gibi popüler kütüphane ve framework'leri kullanan Python tabanlı bir uygulamadır. Uygulama, veri işleme, model çıkarımı ve sonuç görüntüleme gibi özellikler sunar.
+LujainAI, Flask tabanlı bir web uygulamasıdır. Bu uygulama, kullanıcıların göğüs röntgeni görüntülerini yükleyerek yapay zeka modeli ile gölgeleri veya kitleleri tespit etmelerini sağlar. Deep Learning teknikleri kullanarak, özellikle Convolutional Neural Networks (CNNs), röntgen görüntülerindeki anormallikleri analiz eder. Kullanıcı dostu arayüzü ve hızlı sonuç görüntüleme özelliği ile, uygulama sağlık sektöründe önemli bir destek aracı olabilir.
 
-## Özellikler
-
-- **Web Arayüzü**: Model ile etkileşim için Flask tabanlı bir ön yüz.
-- **Görüntü İşleme**: OpenCV ve Pillow kullanarak ileri düzey görüntü işleme.
-- **Veri Analizi**: Yapılandırılmış veri işleme için Pandas ve Numpy kullanımı.
-- **Model Çıkarımı**: Tahmin için PyTorch tabanlı yapay zeka modelleri.
-- **Görsel Sunum**: Matplotlib ve Seaborn ile zengin görsel çıktılar oluşturma.
+## Özellikler:
+- Web arayüzü üzerinden röntgen görüntüsü yükleme.
+- Yapay zeka ile gölgeleri ve kitleleri tespit etme.
+- Sonuçların hızlı ve dinamik görüntülenmesi.
 
 ## Gereksinimler
 
