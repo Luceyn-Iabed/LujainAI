@@ -72,6 +72,9 @@ Tam bağımlılık listesi için requirements.txt dosyasına bakabilirsiniz.
 4. Sonuçlar, görsel olarak web arayüzünde görüntülenir.
 
 
-                 ## not
+
+
+
+    ## not
                            -  share/man/man1
-                                  - YANLIŞIKLA EKLADIM
+    - YANLIŞIKLA EKLADIM
