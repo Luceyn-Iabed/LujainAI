@@ -29,3 +29,14 @@ cd LujainAI
 ```bash
 pip install -r requirements.txt
 ```
+
+## Kullanım
+
+Uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
+
+```bash
+ python app.py
+```
+Web tarayıcınızda # http://127.0.0.1:5000  adresine giderek uygulama ile etkileşime geçebilirsiniz.
+
+
