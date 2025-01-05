@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="utf-8">
+<title>Sıkça Sorulan Sorular</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--CSS Stiller-->
+<link rel="stylesheet" href="/static/css/w3.css">
+<link rel="stylesheet" href="/static/css/woza.css">
+
+<!--Google Fonts bağlantısı-->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" type="image/png" href="https://media.gettyimages.com/id/2159301017/vector/artificial-intelligence-ai-with-female-face-icon-on-white-background.jpg?s=612x612&w=gi&k=20&c=ByAmCCjdqWz8odC6RIgXy8PUvI1REitZm_9o_fxe1w8=">
+
+<style>
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+</style>
+
+</head>
+
+<body class="w3-pale-blue">
+
+<div style="max-width:1500px">
+<!-- 1. ANASAYFA SEKMESİ -->
+<div class="w3-animate-opacity w3-padding w3-margin-bottom">
+
+<!-- 960 genişliğinde bölge -->
+<div class='w3-content w3-padding w3-white' style="max-width:960px">
+
+<!-- Üst Çubuk -->
+<div class='normal-bar w3-padding w3-round w3-text-black w3-opacity w3-small'>
+
+    <p class="w3-padding-left no-margin space-letters w3-left-align unblock">
+    <a class="change-size" href="{{ url_for('home_func') }}"><b><-- Geri Git</b></a>
+    </p>
+
+   
+</div>
+
+<div class="w3-text-purple w3-center w3-margin space-letters">
+
+    <h2>Sıkça Sorulan Sorular</h2>
+
+</div>
+
+<div class='bottom-margin'>
+
+    <!-- Blok Başlangıcı -->
+    <div class='side-margin1 w3-round text-color space-letters 
+    w3-margin-bottom'>
+
+        <p class='w3-text-purple topp-margin'><b>1- Bu uygulama ne yapar?</b></p>
+        <p>Bu uygulama, göğüs röntgenlerini otomatik olarak analiz eder ve şüpheli opasitelerin etrafına sınır kutuları çizer. Radyologlar, ardından vurgulanan alanları gözden geçirir ve nihai teşhisi koymak için klinik yargılarını kullanabilirler. Bu, ücretsiz bir teşhis destek aracıdır.</p>
+
+        <p class='w3-text-purple topp-margin'><b>2- Nasıl kullanılır?</b></p>
+        <p>- Bir veya daha fazla göğüs röntgeni yükleyin (dicom, png veya jpg formatında).<br>
+            - Görüntüleriniz gönderildikten sonra otomatik olarak analiz edilir.<br>
+            - Görüntü isimlerinin bir listesi görüntülenir.<br>
+            - Şüpheli opasitelerin sayısı da görüntülenir.<br>
+            - Bir görüntü ismine tıklayarak o görüntüyü, çizilmiş sınır kutuları ile görebilirsiniz.<br>
+            - Görüntü üzerine herhangi bir yere tıklayarak sınır kutularını gizleyebilir veya gösterebilirsiniz.</p>
+
+        <p>Denemek için birkaç örnek göğüs röntgeni, "örnek_Lujain_images" adlı klasörde bulunmaktadır. Bu görselleri kullanabilirsiniz.</p>
+
+        <p class='w3-text-purple topp-margin'><b>3- Görüntüyü nasıl büyütebilirim?</b></p>
+        <p>Görüntüyü büyütmek için Mac ve Windows 10'da yerleşik olan masaüstü yakınlaştırma özelliğini kullanın.<br>
+            Görüntünün büyütmek istediğiniz kısmına fare imlecini yerleştirin, sonra:<br>
+            - Mac'te iki parmağınızı dokunmatik alanda ayırarak,<br>
+            - Windows'ta Windows tuşunu basılı tutup + tuşuna basarak.</p>
+
+        <p class='w3-text-purple topp-margin'><b>4- Bu uygulama nasıl çalışır?</b></p>
+        <p>İnce ayarlanmış Faster R-CNN bilgisayarla görme modeli her görüntüyü analiz eder. Opasiteler tespit edildiğinde, model bunların sınır kutusu koordinatlarını çıktılar. Bu kutular daha sonra röntgen üzerine çizilir.<br>
+            Daha fazla bilgi için <a href="/static/assets/Kart Bilgisi ve Uygulama Bilgisi v1.0.pdf" class="w3-text-blue">Model Kartı'na</a> bakınız.</p>
+
+        <p class='w3-text-purple topp-margin'><b>5- Hangi görüntü formatları destekleniyor?</b></p>
+        <p>Uygulama, dicom, png veya jpg formatındaki görüntüleri kabul eder. Tiff görüntüleri desteklenmemektedir.</p>
+
+        <p class='w3-text-purple topp-margin'><b>6- Bu uygulama pediatrik görüntüleri analiz edebilir mi?</b></p>
+        <p>Evet, edebilir. Ancak eğitim verilerinde çok fazla pediatrik görüntü olmadığı için, pediatrik görüntülerdeki performans yetişkin görüntülerine kıyasla daha düşük olabilir. Pediatrik doğrulama sonuçları <a href="/static/assets/Kart Bilgisi ve Uygulama Bilgisi v1.0.pdf" class="w3-text-blue">model kartında</a> gösterilmiştir.</p>
+
+        <p class='w3-text-purple topp-margin'><b>7- Bu uygulamanın çalışması için internet bağlantısına ihtiyacım var mı?</b></p>
+        <p>Hayır, internet bağlantısına gerek yoktur. Ancak başlangıç indirme ve kurulum için internet bağlantısı gereklidir.</p>
+
+        <p class='w3-text-purple topp-margin'><b>8- Bir GPU ve çok fazla RAM'e sahip bir bilgisayara ihtiyacım olacak mı?</b></p>
+        <p>Bir GPU daha hızlı olabilir, ancak zorunlu değildir. Bu uygulama CPU üzerinde de düzgün çalışır. Ayrıca çok fazla RAM'e de ihtiyacınız yok. Normal bir Mac veya PC bu uygulamayı herhangi bir sorun yaşamadan çalıştırabilir.</p>
+
+        <p class='w3-text-purple topp-margin'><b>9- Uygulama her zaman ücretsiz olacak mı?</b></p>
+        <p>Evet, her zaman ücretsiz olacak. Bu, açık kaynaklı bir projedir.</p>
+
+        <p>Bu uygulamanın kullanımında herhangi bir ücret yoktur. Ancak hatalar, geliştirilmesi gereken konular ve uygulamanın gerçek dünya performansı hakkında geri bildirimde bulunabilirsiniz.
+            Geri bildirimde bulunmak için <a href="https://github.com/Luceyn-Iabed/LujainAI" class="w3-text-blue">buraya</a> tıklayabilirsiniz.</p>
+
+    </div>
+    <!-- Blok Sonu -->
+    
+</div>
+
+</div><!-- 960 genişliğinde bölge Sonu -->
+
+
+</div><!--ANASAYFA SEKME SONU-->
+</div> <!-- w3-content -->
+</body>
+</html>
