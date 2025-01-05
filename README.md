@@ -24,3 +24,8 @@ Uygulamayı çalıştırmadan önce sisteminizde şunların yüklü olduğundan 
 ```bash
 git clone https://github.com/Luceyn-Iabed/LujainAI.git
 cd LujainAI
+```
+2. Bağımlılıkları yükleyin:
+```bash
+pip install -r requirements.txt
+```
